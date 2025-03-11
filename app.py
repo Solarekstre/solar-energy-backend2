@@ -63,5 +63,5 @@ def calculate_solar_needs(daily_kwh):
         "payback_period_years": round((panel_count * 6000 + battery_capacity * 10000) / (daily_kwh * 365 * 2.75), 2)
     }
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
