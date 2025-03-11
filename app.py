@@ -3,7 +3,7 @@ import pytesseract
 from PIL import Image
 import os
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
